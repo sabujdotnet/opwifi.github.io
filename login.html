@@ -1,0 +1,7 @@
+
+	$(if error)
+	<meta http-equiv="refresh" content="0; url=$(link-orig)&msg=$(error)&nux-key=$(chap-id)-$(chap-challenge)">
+	$(else)
+	<meta http-equiv="refresh" content="0; url=http://172.16.1.2/?nux-mac=$(mac)&nux-ip=$(ip)&nux-hostname=$(hostname)&nux-router=1&nux-key=$(chap-id)-$(chap-challenge)">
+	$(endif)
+
